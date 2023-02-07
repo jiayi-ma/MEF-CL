@@ -10,8 +10,8 @@ device2 = "/gpu:1"
 class Generator(object):
 
 	def __init__(self, sco):
-		self.local = Local(sco)#shallow_feature
-		self.sa = Sa_net(sco)#deep_feature
+		self.local = Local(sco)	#shallow_feature
+		self.sa = Sa_net(sco)	#deep_feature
 		self.merge = Merge_net(sco)
 		self.scope_name = sco
 
