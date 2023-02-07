@@ -28,7 +28,7 @@ def generate(oe_path, ue_path, model_path, index, output_path=None, format=None)
     shape = oe_img.shape
     print('oe img shape', oe_img.shape)
 
-    start = time.time()
+    
 
     with tf.Graph().as_default(), tf.Session() as sess:
         SOURCE_oe = tf.placeholder(tf.float32, shape=shape, name='SOURCE_oe')
@@ -52,5 +52,5 @@ def generate(oe_path, ue_path, model_path, index, output_path=None, format=None)
 
         imsave(output_path + str(index) + format, output)
 
-        end = time.time()
-        return (end - start)
+        
+        
