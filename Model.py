@@ -4,8 +4,8 @@ import numpy as np
 
 WEIGHT_INIT_STDDEV = 0.5
 
-device1 = "/cpu:0"
-device2 = "/cpu:0"
+device1 = "/gpu:0"
+device2 = "/gpu:1"
 
 class Generator(object):
 
